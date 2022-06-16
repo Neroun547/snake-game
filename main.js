@@ -82,22 +82,19 @@ window.addEventListener("keydown", (e) => {
         goSnakeRight = false;
 
         goSnakeLeft = true;
-    }
-    if(e.code === "KeyD" && !goSnakeLeft) {
+    } else if(e.code === "KeyD" && !goSnakeLeft) {
         goSnakeTop = false;
         goSnakeDown = false;
         goSnakeLeft = false;
 
         goSnakeRight = true;
-    }
-    if(e.code === "KeyW" && !goSnakeDown) {
+    } else if(e.code === "KeyW" && !goSnakeDown) {
         goSnakeDown = false;
         goSnakeLeft = false;
         goSnakeRight = false;
 
         goSnakeTop = true;
-    }
-    if(e.code === "KeyS" && !goSnakeTop) {
+    } else if(e.code === "KeyS" && !goSnakeTop) {
         goSnakeTop = false;
         goSnakeLeft = false;
         goSnakeRight = false;
